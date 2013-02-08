@@ -191,11 +191,11 @@
             </nav>
             <article id="app-info" class="active scroll">
                 <div class="indented">
-                    <div class="button small secondary">
+                    <div class="button small">
                         <span class="icon inbox"></span>
                         <span> Subscribe </span>
                     </div>
-                    <div class="button small secondary" style="float: right;">
+                    <div class="button small" style="float: right;">
                         <span class="icon thumbs-up"></span>
                         <span> Like </span>
                     </div>
@@ -299,12 +299,6 @@
         </section>
         <section id="inbox-section" data-transition="slide">
             <header data-back="icon left" data-title="Inbox" class="extended">
-                <nav>
-                    <a href="#" class="button right">
-                    <span class="icon check"></span>
-                    Read
-                    </a>    
-                </nav>
             </header>
             <nav class="groupbar with-labels">
                 <a href="#inbox" data-router="article" class="active">
@@ -312,7 +306,11 @@
                     <span class="tag count"> 2 </span>
                 </a>
             </nav>
-            <article id="inbox" class="active list scroll indented">
+            <article id="inbox" class="active scroll indented">
+                <div>
+                    <a class="button anchor theme icon check"> Mark all as read </a>
+                </div>
+                <div class="list">
                 <ul>
                     <li data-icon="user" class="thumb selectable">
                         <a href="#">
@@ -359,6 +357,7 @@
                         </a>
                     </li>
                 </ul>
+                </div>
             </article>
             <footer>
                 <nav>
