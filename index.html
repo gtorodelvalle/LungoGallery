@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lungo Gallery </title>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="style/css/package-lungo-2.1.0/lungo.css">
+        <link rel="stylesheet" href="style/css/package-lungo-2.1.0/lungo.icon.css">
+        <link rel="stylesheet" href="style/css/package-lungo-2.1.0/lungo.icon.brand.css">
+        <link rel="stylesheet" href="style/css/package-lungo-2.1.0/theme.lungo.css">
+        <script type="text/javascript" src="lib/js/package-quojs-2.3.0/quo.js"></script>
+        <script type="text/javascript" src="lib/js/package-lungo-2.1.0/lungo.js"></script>
+        <script defer type="text/javascript" src="lib/js/app.js"></script>
+    </head>
+    <body>  
+        <section id="main-section" data-transition="slide">
+            <header class="extended">
+                <nav>
+                    <a href="#menu" data-router="aside">
+                        <span class="icon menu"></span>
+                    </a>
+                    <div class="title centered">
+                        Lungo Gallery
+                    </div>
+                    <a href="#add-app-section" data-router="section" data-icon="pencil" class="right"></a>
+                    <a href="#inbox-section" data-router="section" class="right">
+                        <span class="icon mail"></span>
+                        <span class="tag count"> 2 </span>
+                    </a>
+                </nav>
+            </header>
+            <nav class="groupbar with-labels">
+                <a href="#latest-apps" data-router="article" data-label="Latest apps" data-count="2" class="active"></a>
+                <a href="#best-apps" data-router="article" data-label="Best apps" data-count="1"></a>
+                <a href="#popular-apps" data-router="article" data-label="Popular apps" data-count="3"></a>
+            </nav>
+            <article id="latest-apps" class="list scroll indented active">
+                <ul>
+                    <li data-image="http://lorempixel.com/200/200/abstract/" class="thumb selectable">
+                        <a href="#app-section" data-router="section">
+                            <span class="right tag">abstract</span>
+                            <strong>App 1</strong>
+                            <small>by: author_1</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 11:34</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/food/" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">food</span>
+                            <strong>App 2</strong>
+                            <small>by: author_2</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 10:34</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/people/" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">people</span>
+                            <strong>App 3</strong>
+                            <small>by: author_3</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 09:13</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/technics/" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">tech</span>
+                            <strong>App 4</strong>
+                            <small>by: author_4</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 08:23</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article id="best-apps" class="list scroll indented">
+                <ul>
+                    <li data-image="http://lorempixel.com/200/200/animals/" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">animals</span>
+                            <strong>App 5</strong>
+                            <small>by: author_5</small>
+                            <div class="right">
+                                <span data-icon="thumbs-up"></span>
+                                <span class="tag accept">25</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/nightlife/" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">nightlife</span>
+                            <strong>App 6</strong>
+                            <small>by: author_6</small>
+                            <div class="right">
+                                <span data-icon="thumbs-up"></span>
+                                <span class="tag accept">23</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/nature/" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">nature</span>
+                            <strong>App 7</strong>
+                            <small>by: author_7</small>
+                            <div class="right">
+                                <span data-icon="thumbs-up"></span>
+                                <span class="tag accept">20</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article id="popular-apps" class="list scroll indented">
+                <ul>
+                    <li data-image="http://lorempixel.com/200/200/transport/" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">transport</span>
+                            <strong>App 8</strong>
+                            <small>by: author_8</small>
+                            <div class="right">
+                                <span data-icon="mail"></span>
+                                <span class="tag secondary">7</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/city/" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">city</span>
+                            <strong>App 9</strong>
+                            <small>by: author_9</small>
+                            <div class="right">
+                                <span data-icon="mail"></span>
+                                <span class="tag secondary">5</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/fashion/" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">fashion</span>
+                            <strong>App 10</strong>
+                            <small>by: author_10</small>
+                            <div class="right">
+                                <span data-icon="mail"></span>
+                                <span class="tag secondary">4</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-image="http://lorempixel.com/200/200/technics/" class="light thumb light selectable">
+                        <a href="#">
+                            <span class="right tag">tech</span>
+                            <strong>App 11</strong>
+                            <small>by: author_11</small>
+                            <div class="right">
+                                <span data-icon="mail"></span>
+                                <span class="tag secondary">3</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <footer>
+                <nav>
+                    <a href="#latest-apps" data-router="article" data-icon="clock"  data-count="2" class="active"></a>
+                    <a href="#best-apps" data-router="article" data-icon="heart-full" data-count="1"></a>
+                    <a href="#popular-apps" data-router="article" data-icon="star" data-count="3"></a>
+                </nav>
+            </footer>
+        </section>
+        <section id="app-section" data-transition="slide">
+            <header data-title="App" class="extended">
+                <nav>
+                    <a href="#back" data-router="section" data-icon="left" data-label="Cancel" class="button">
+                    <a href="#back" class="button right">
+                        Mark comments as read
+                    </a>
+                </nav>
+            </header>
+            <nav class="groupbar">
+                <a href="#app" data-router="article" class="active">
+                    <abbr> General Info</abbr>
+                </a>
+                <a href="#comments" data-router="article">
+                    <abbr> Coments</abbr>
+                    <span class="tag count"> 5 </span>
+                </a>
+            </nav>
+            <article id="app" class="active">
+                APP DATA
+            </article>
+            <article id="comments">
+                APP COMMENTS
+            </article>
+            <footer>
+                <nav>
+                    <a href="#app" data-router="article" data-icon="mobile" class="active"></a>
+                    <a href="#comments" data-router="article">
+                        <span class="icon mail"></span>
+                        <span class="tag count"> 5 </span>
+                    </a>
+                </nav>
+            </footer>
+        </section>
+        <section id="inbox-section" data-transition="slide">
+            <header data-back="icon left" data-title="Inbox" class="extended">
+                <nav>
+                    <a href="#" class="button right">Mark as read</a>    
+                </nav>
+            </header>
+            <nav class="groupbar with-labels">
+                <a href="#inbox" data-router="article" class="active">
+                    <abbr>Messages</abbr>
+                    <span class="tag count"> 2 </span>
+                </a>
+            </nav>
+            <article id="inbox" class="active list scroll indented">
+                <ul>
+                    <li data-icon="user" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">sports</span>
+                            <strong>"This is a comment."</strong>
+                            <small>user_12 sent a comment to App 12</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 15:34</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="user" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">fashion</span>
+                            <strong>"This is another comment."</strong>
+                            <small>user_13 sent a comment to App 13</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 14:32</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="user" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">sports</span>
+                            <strong>"This is a even another comment."</strong>
+                            <small>user_14 sent a comment to App 12</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 13:11</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="user" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">city</span>
+                            <strong>"This is a one other comment."</strong>
+                            <small>author_15 sent a comment to App 14</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 12:08</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <footer>
+                <nav>
+                    <a href="#inbox" data-router="article" class="active">
+                        <span class="icon mail-open"></span>
+                        <span class="tag count"> 2 </span>
+                    </a>
+                </nav>   
+            </footer>
+        </section>
+        <section id="add-app-section" data-transition="slide">
+            <header data-title="Add a new Lungo app">
+                <nav>
+                    <a href="#back" data-router="section" data-icon="left" data-label="Cancel" class="button">
+                    </a>
+                    <a href="#back" data-router="section" class="button right">
+                        Done
+                    </a>
+                </nav>
+            </header>
+            <article id="add-app" class="active">
+                ADD NEW LUNGO APP
+            </article>
+            <footer>
+                <nav>
+                    <a href="#add-app" data-router="article" data-icon="pencil" class="active"></a>
+                </nav>
+            </footer>
+        </section>
+        <section id="settings-section" data-transition="slide">
+            <header data-title="Settings">
+                <nav>
+                    <a href="#back" data-router="section" class="button icon left">
+                        Cancel
+                    </a>
+                    <a href="#back" data-router="section" class="button right">
+                        Done
+                    </a>  
+                </nav>
+            </header>
+            <article id="settings" class="active">
+                Settings
+            </article>
+            <footer>
+                <nav>
+                    <a href="#settings" data-router="section" class="active">
+                        <span class="icon settings"></span>
+                    </a>
+                </nav>   
+            </footer>
+        </section>
+        <aside id="menu">
+            <header data-title="Menu">
+            </header>
+            <article id="menu-content" class="active list">
+                <ul>
+                    <li>
+                        <a href="#latest-apps" data-router="article">
+                            <strong> Home </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#inbox-section" data-router="section">
+                            <strong> Inbox </strong>
+                            <span class="right tag count"> 2 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#settings-section" data-router="section">
+                            <strong> Settings </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#app-section" data-router="section">
+                            <strong> Exit </strong>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </aside>
+    </body>
+</html>
