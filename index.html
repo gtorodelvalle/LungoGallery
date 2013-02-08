@@ -177,33 +177,119 @@
         <section id="app-section" data-transition="slide">
             <header data-title="App" class="extended">
                 <nav>
-                    <a href="#back" data-router="section" data-icon="left" data-label="Cancel" class="button">
-                    <a href="#back" class="button right">
-                        Mark comments as read
-                    </a>
+                    <a href="#back" data-router="section" data-icon="left"></a>
                 </nav>
             </header>
             <nav class="groupbar">
-                <a href="#app" data-router="article" class="active">
+                <a href="#app-info" data-router="article" class="active">
                     <abbr> General Info</abbr>
                 </a>
-                <a href="#comments" data-router="article">
+                <a href="#app-comments" data-router="article">
                     <abbr> Coments</abbr>
-                    <span class="tag count"> 5 </span>
+                    <span class="tag count"> 2 </span>
                 </a>
             </nav>
-            <article id="app" class="active">
-                APP DATA
+            <article id="app-info" class="active scroll">
+                <div>
+                    <div class="button small secondary">
+                        <span class="icon inbox"></span>
+                        <span> Subscribe </span>
+                    </div>
+                    <div class="button small secondary" style="float: right;">
+                        <span class="icon thumbs-up"></span>
+                        <span> Like </span>
+                    </div>
+                </div>
+                <form>
+                    <span data-progress="25%"></span>
+                    <fieldset>
+                        <label for="app-name">Name: </label>
+                        <input id="app-name" name="app-name" type="text" placeholder="Name of the app...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-author">Name: </label>
+                        <input id="app-author" name="app-author" type="text" placeholder="Author of the app...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-category">Category:</label>
+                        <label id="app-category" name="app-category" class="select">
+                            <select>
+                                <option value="1">None</option>
+                                <option value="2">Second category</option>
+                                <option value="3">Third category</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-description"> Description:</label>
+                        <textarea id="app-description" name="app-description" placeholder="Description of the app..."></textarea>
+                    </fieldset>
+                    <fieldset data-icon="plus">
+                        <label for="app-url">URL:</label>
+                        <input id="app-url" name="app-url" type="text" placeholder="http://url-of-the-app">
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-screenshot">Screenshot:</label>
+                        <img id="app-screenshot" name="app-screenshot" src="http://lorempixel.com/200/200"></img>
+                    </fieldset>
+                </form>
             </article>
-            <article id="comments">
-                APP COMMENTS
+            <article id="app-comments" class="scroll">
+                <div class="list indented">
+                <ul>
+                    <li data-icon="user" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">sports</span>
+                            <strong>"This is a comment."</strong>
+                            <small>by user_12</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 15:34</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="user" class="thumb selectable">
+                        <a href="#">
+                            <span class="right tag">fashion</span>
+                            <strong>"This is another comment."</strong>
+                            <small>by user_13</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 14:32</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="user" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">sports</span>
+                            <strong>"This is a even another comment."</strong>
+                            <small>by user_14</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 13:11</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-icon="user" class="light thumb selectable">
+                        <a href="#">
+                            <span class="right tag">city</span>
+                            <strong>"This is a one other comment."</strong>
+                            <small>by user_15</small>
+                            <div class="right">
+                                <span data-icon="clock"></span>
+                                <span class="tag secondary">07/02/2013 12:08</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                </div>
             </article>
             <footer>
                 <nav>
-                    <a href="#app" data-router="article" data-icon="mobile" class="active"></a>
-                    <a href="#comments" data-router="article">
+                    <a href="#app-info" data-router="article" data-icon="mobile" class="active"></a>
+                    <a href="#app-comments" data-router="article">
                         <span class="icon mail"></span>
-                        <span class="tag count"> 5 </span>
+                        <span class="tag count"> 2 </span>
                     </a>
                 </nav>
             </footer>
@@ -211,7 +297,10 @@
         <section id="inbox-section" data-transition="slide">
             <header data-back="icon left" data-title="Inbox" class="extended">
                 <nav>
-                    <a href="#" class="button right">Mark as read</a>    
+                    <a href="#" class="button right">
+                    <span class="icon check"></span>
+                    Read
+                    </a>    
                 </nav>
             </header>
             <nav class="groupbar with-labels">
@@ -278,17 +367,52 @@
             </footer>
         </section>
         <section id="add-app-section" data-transition="slide">
-            <header data-title="Add a new Lungo app">
+            <header data-title="New Lungo app" class="extended">
                 <nav>
-                    <a href="#back" data-router="section" data-icon="left" data-label="Cancel" class="button">
+                    <a href="#back" data-router="section" data-icon="left">
                     </a>
                     <a href="#back" data-router="section" class="button right">
                         Done
                     </a>
                 </nav>
             </header>
+            <nav class="groupbar with-labels">
+                <a href="#add-app" data-router="article" data-label="Please fill the form:" class="active"></a>
+            </nav>
             <article id="add-app" class="active">
-                ADD NEW LUNGO APP
+                <form>
+                    <span data-progress="25%"></span>
+                    <fieldset>
+                        <label for="app-name">Name: </label>
+                        <input id="app-name" name="app-name" type="text" placeholder="Name of the app...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-author">Name: </label>
+                        <input id="app-author" name="app-author" type="text" placeholder="Author of the app...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-category">Category:</label>
+                        <label id="app-category" name="app-category" class="select">
+                            <select>
+                                <option value="1">None</option>
+                                <option value="2">Second category</option>
+                                <option value="3">Third category</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-description"> Description:</label>
+                        <textarea id="app-description" name="app-description" placeholder="Description of the app..."></textarea>
+                    </fieldset>
+                    <fieldset data-icon="plus">
+                        <label for="app-url">URL:</label>
+                        <input id="app-url" name="app-url" type="text" placeholder="http://url-of-the-app">
+                    </fieldset>
+                    <fieldset>
+                        <label for="app-screenshot">Screenshot:</label>
+                        <img id="app-screenshot" name="app-screenshot" src="http://lorempixel.com/200/200"></img>
+                    </fieldset>
+                </form>
             </article>
             <footer>
                 <nav>
@@ -299,8 +423,7 @@
         <section id="settings-section" data-transition="slide">
             <header data-title="Settings">
                 <nav>
-                    <a href="#back" data-router="section" class="button icon left">
-                        Cancel
+                    <a href="#back" data-router="section" class="icon left">
                     </a>
                     <a href="#back" data-router="section" class="button right">
                         Done
@@ -332,6 +455,11 @@
                         <a href="#inbox-section" data-router="section">
                             <strong> Inbox </strong>
                             <span class="right tag count"> 2 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#add-app-section" data-router="section">
+                            <strong> New app </strong>
                         </a>
                     </li>
                     <li>
