@@ -175,10 +175,11 @@
             </footer>
         </section>
         <section id="app-section" data-transition="slide">
-            <header data-title="App" class="extended">
+            <header class="extended">
                 <nav>
                     <a href="#back" data-router="section" data-icon="left"></a>
                 </nav>
+                <span class="title centered icon mobile"> App name </span>
             </header>
             <nav class="groupbar">
                 <a href="#app-info" data-router="article" class="active">
@@ -207,7 +208,7 @@
                         <input id="app-name" name="app-name" type="text" placeholder="Name of the app...">
                     </fieldset>
                     <fieldset>
-                        <label for="app-author">Name: </label>
+                        <label for="app-author">Author: </label>
                         <input id="app-author" name="app-author" type="text" placeholder="Author of the app...">
                     </fieldset>
                     <fieldset>
@@ -295,9 +296,123 @@
             </article>
             <footer>
                 <nav>
-                    <a href="#app-info" data-router="article" data-icon="mobile" class="active"></a>
+                    <a href="#app-info" data-router="article" data-icon="info" class="active"></a>
                     <a href="#app-comments" data-router="article">
                         <span class="icon mail"></span>
+                        <span class="tag count"> 2 </span>
+                    </a>
+                </nav>
+            </footer>
+        </section>
+        <section id="user-section" data-transition="slide">
+            <header class="extended">
+                <nav>
+                    <a href="#back" data-router="section" data-icon="left"></a>
+                </nav>
+                <span class="title centered icon user"> Username </span>
+            </header>
+            <nav class="groupbar">
+                <a href="#user-info" data-router="article" class="active">
+                    <abbr> General Info</abbr>
+                </a>
+                <a href="#user-apps" data-router="article">
+                    <abbr> Apps </abbr>
+                    <span class="tag count"> 2 </span>
+                </a>
+            </nav>
+            <article id="user-info" class="active scroll">
+                <div class="indented">
+                    <div class="button small">
+                        <span class="icon inbox"></span>
+                        <span> Subscribe </span>
+                    </div>
+                    <div class="button small" style="float: right;">
+                        <span class="icon thumbs-up"></span>
+                        <span> Like </span>
+                    </div>
+                </div>
+                <form>
+                    <span data-progress="0%"></span>
+                    <fieldset>
+                        <label for="user-name">Name: </label>
+                        <input id="user-name" name="user-name" type="text" placeholder="Name of the user...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="user-username">Username: </label>
+                        <input id="user-username" name="user-username" type="text" placeholder="Username of the user...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="user-about"> About:</label>
+                        <textarea id="user-about" name="user-about" placeholder="About the user..."></textarea>
+                    </fieldset>
+                    <fieldset data-icon="plus">
+                        <label for="user-avatar-url">Avatar URL:</label>
+                        <input id="user-avatar-url" name="user-avatar-url" type="text" placeholder="http://url-of-the-avatar">
+                    </fieldset>
+                    <fieldset>
+                        <label for="user-avatar">Avatar:</label>
+                        <img id="user-avatar" name="user-avatar" src="http://lorempixel.com/200/200/people"></img>
+                    </fieldset>
+                </form>
+            </article>
+            <article id="user-apps" class="scroll indented">
+                <div>
+                    <a class="button anchor icon check"> Mark all as seen </a>
+                </div>
+                <div class="list indented">
+                    <ul>
+                        <li data-image="http://lorempixel.com/200/200/abstract/" class="thumb selectable">
+                            <a href="#app-section" data-router="section">
+                                <span class="right tag">abstract</span>
+                                <strong>App 1</strong>
+                                <small>by: author_1</small>
+                                <div class="right">
+                                    <span data-icon="thumbs-up"></span>
+                                    <span class="tag accept">15</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-image="http://lorempixel.com/200/200/technics/" class="thumb selectable">
+                            <a href="#app-section" data-router="section">
+                                <span class="right tag">tech</span>
+                                <strong>App 2</strong>
+                                <small>by: author_1</small>
+                                <div class="right">
+                                    <span data-icon="thumbs-up"></span>
+                                    <span class="tag accept">13</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-image="http://lorempixel.com/200/200/sports/" class="thumb selectable">
+                            <a href="#app-section" data-router="section">
+                                <span class="right tag">sports</span>
+                                <strong>App 3</strong>
+                                <small>by: author_1</small>
+                                <div class="right">
+                                    <span data-icon="thumbs-up"></span>
+                                    <span class="tag accept">9</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-image="http://lorempixel.com/200/200/city/" class="thumb selectable">
+                            <a href="#app-section" data-router="section">
+                                <span class="right tag">city</span>
+                                <strong>App 4</strong>
+                                <small>by: author_1</small>
+                                <div class="right">
+                                    <span data-icon="thumbs-up"></span>
+                                    <span class="tag accept">5</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <footer>
+                <nav>
+                    <a href="#user-info" data-router="article" data-icon="info" class="active"></a>
+                    <a href="#user-apps" data-router="article">
+                        <span class="icon mobile"></span>
                         <span class="tag count"> 2 </span>
                     </a>
                 </nav>
@@ -460,6 +575,16 @@
                         </a>
                     </li>
                     <li>
+                        <a href="#" data-router="section">
+                            <strong> Sign up </strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-router="section">
+                            <strong> Login </strong>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#inbox-section" data-router="section">
                             <strong> Inbox </strong>
                             <span class="right tag count"> 2 </span>
@@ -476,7 +601,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" data-router="section">
+                        <a href="#user-section" data-router="section">
                             <strong> Exit </strong>
                         </a>
                     </li>
