@@ -1,4 +1,4 @@
-var userCollection = Meteor.Collection("users");
+// var userCollection = Meteor.Collection("users");
 /*
 var userCollection = [
   {
@@ -16,7 +16,7 @@ var userCollection = [
 ];
 */
 
-var appCollection = Meteor.Collection("apps");
+// var appCollection = Meteor.Collection("apps");
 /*
 var appCollection = [
   {
@@ -33,7 +33,7 @@ var appCollection = [
 ];
 */
 
-var messageCollection = Meteor.Collection("messages");
+// var messageCollection = Meteor.Collection("messages");
 /*
 var messageCollection = [
   {
